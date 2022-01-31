@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-slate-900 text-white">
+    <div class="m-10">
+      <!-- Navigator.getUserMedia() [Deprecated] -->
+      <h1 class="text-4xl font-bold text-center">navigator.mediaDevices 🚀</h1>
+      <div class="flex flex-col items-center mt-10">
+        <video
+          id="video"
+          autoplay
+          class="h-96 aspect-video bg-zinc-900/10"
+        ></video>
+        <div class="mt-10">
+          <button id="video-toggle" class="bg-sky-800 px-3 py-2 rounded-md">
+            Toggle Video
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
